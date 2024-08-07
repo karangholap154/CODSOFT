@@ -1,3 +1,5 @@
+Landing Page 
+
 Path to Happiness Blog
 Path to Happiness is a responsive and visually appealing blog designed to guide users on a journey toward personal fulfillment and well-being. Built using HTML and CSS, this project focuses on creating a user-friendly and engaging experience for all age groups.
 
