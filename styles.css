@@ -1,0 +1,216 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #bffbff;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+header {
+    background: #3a3a3a;
+    color: #fff;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+header h1 {
+    margin-left: 1rem;
+    font-size: 1.8rem;
+}
+
+.menu-toggle {
+    background: #e8491d;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+
+nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #3a3a3a;
+    width: 200px;
+    display: none;
+    z-index: 1000;
+}
+
+nav.active {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+nav ul li a:hover {
+    background: #e8491d;
+}
+
+main {
+    background: #fff;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.happy {
+    color: purple;
+}
+
+main section {
+    margin-bottom: 2rem;
+}
+
+main h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    border-bottom: 2px solid #e8491d;
+    padding-bottom: 0.5rem;
+}
+
+main article {
+    margin-bottom: 1rem;
+}
+
+main h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+main p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 0.5rem 1.5rem;
+    background: #3a3a3a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background: #3a3a3a;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-toggle {
+        position: static;
+        margin-bottom: 1rem;
+    }
+
+    nav {
+        width: 100%;
+        position: static;
+        display: none;
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul li a {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    main h2 {
+        font-size: 1.5rem;
+    }
+
+    main h3 {
+        font-size: 1.2rem;
+    }
+
+    main p {
+        font-size: 1rem;
+    }
+
+    .menu-toggle {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
